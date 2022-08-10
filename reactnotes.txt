@@ -3,4 +3,25 @@
 # Date Modified: 08/10/2022
 # Description: A place for me to keep notes and code that I type out following SoloLearn's React + Redux Course
 
+React was created by Facebook (Now Meta).
+
+DOM = Document Object Model
+
+React uses a virtual DOM (Document Object Model) "to update only the parts of the website that have changed." >> Much faster updates.
+
+"Allows developers to group related code together, ... making building and maintaining large scale applications much less complex."
+
+large community and open source
+
+# code: <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+# code: <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+^^ these are two script tags that add the React library to the head of our HTML doc. not prefered for large projects?
+
+script to enable JSX:
+
+# code: <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+"This approach of adding React to a website is only suitable for creating small demos."
+
 
