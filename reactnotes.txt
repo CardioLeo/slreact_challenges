@@ -44,3 +44,26 @@ Note: ^^ doesn't have to be id'd as "container"
 # </div>
 
 First two lessons complete.
+
+Third lesson:
+
+using React-DOM in a website beyond a demo.
+
+"Create React App"
+
+# code [to run in command line]:
+# npx create-react-app my-app
+# cd my-app
+# npm start
+
+^installs all relevant dependencies and starts project on "localhost:3000"
+
+default output of our project in the browswer will be a React logo and note.
+
+"Create React App allows us to focus on the code rather than installing and configuring different tools."
+
+# code [cli]:
+# npx create-react-app contact
+# cd contacts
+# npm start
+
