@@ -24,4 +24,23 @@ script to enable JSX:
 
 "This approach of adding React to a website is only suitable for creating small demos."
 
+---
 
+need containter to display something using react:
+
+# code: <div id="container"></div>
+Note: ^^ doesn't have to be id'd as "container"
+
+# code:
+# <script type="text/babel">
+# ReactDOM.render(
+#	<h1>Hello, React</h1>
+#	document.getElementById('container')
+# )
+# </script>
+
+# code:
+# <div id="root">
+# </div>
+
+First two lessons complete.
