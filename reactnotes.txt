@@ -367,3 +367,35 @@ Here, Functional Components
 end of lesson 3 of module 2.
 
 ---
+
+begins lesson 4 of module 2;
+
+Props
+
+"Functional components can accept arguments, similar to JavaScript functions. These arguments are called props, and represent an object.
+"For example, we can use props in our Hello component:"
+
+# code:
+# function Hello(props) {
+#	return <p>Hell, {props.name}!</p>;
+# }
+
+---
+
+# code:
+# const el = <Hello name ="David" />;
+
+^^^^"This attribute will be passed to the component when rendered. 
+
+# code:
+# function Test(props) {
+#	return <p>{"A"+props.title}</p>;
+# }
+# 
+# const el = <Test title="X" />;
+# ReactDOM.render(
+# 	el,
+#	document.getElementById('root')
+# );
+
+output of preceding codeblock will be "AX"
