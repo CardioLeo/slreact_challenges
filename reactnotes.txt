@@ -136,6 +136,8 @@ everything will make complete sense by the time you finish the course
 # document.getElementById('root')
 # );
 
+[package.json holds the list of dependencies for the application]
+
 end lesson 4, end unit 1;
 
 ---
