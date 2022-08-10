@@ -399,3 +399,59 @@ Props
 # );
 
 output of preceding codeblock will be "AX"
+
+"Components can use other components to generate an output:"
+
+# code:
+# function App() {
+#	return <div>
+#		<Hello name="David" />
+#		<Hello name="James" />
+#		<Hello name="Amy" />
+#	</div>;
+# }
+
+^^^^App component uses Hello component 3 times, each time new name attribute.
+
+"Generally, it is a good practice to split complex components into multiple smaller components, that are reusable. For example, a Post component can use an Avatar component, an Image component, a Date component, etc."
+
+"Props can be accessed in class components using this.props."
+
+# code:
+# class Hello extends React.Component {
+# 	render() {
+# 		return <p>Hello, {this.props.name}!</p>;
+# 	}
+# }
+
+"An important thing to remember is that props are read-only, meaning components cannot modify their props."
+
+"Interactive apps generally need to change data and the page elements. We will learn how to change the output of components using state in the next lesson."
+
+# code:
+# class Image extends React.Component {
+# 	render() {
+# 		return <img src={this.props.url} />;
+#	}
+# }
+
+creating a shopping list
+
+# code:
+# <Item name="Cheese" price="4.99" />
+#
+# function Item(props) {
+# 	return <div className="item">
+#	<b>Name:</b> {props.name} <br />
+#	<b>Price:</b> {props.price}
+#	</div>;
+# }
+#
+# <Item name="Cheese" price="4.99" />
+# <Item name="Bread" price="1.5" />
+# <Item name="Ice cream" price="24" />
+
+"We have added some simple CSS styles to separate the items visually. [the <b>?]Tap Try it on StackBlitz to see the result and play around with the code."
+
+
+
