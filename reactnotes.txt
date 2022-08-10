@@ -142,4 +142,18 @@ end lesson 4, end unit 1;
 
 ---
 
+unit 2: intro to react
+
+# code:
+# ReactDOM.render(
+# 	<h1>Hello, React</h1>
+# 	document.getElementById('root')
+# );
+
+breaking down this code
+
+html: the element is not in quotes to represent a string; html used in js. "This is called JSX, and it is a syntax extension to JavaScript. It allows us to build UI elements right in the JavaScript code!"
+
+"React does not require using JSX, however, it is common practice in the React community to use JSX as it eases the development of user interfaces, as well as allows React to show useful error and warning messages."
+
 
