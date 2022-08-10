@@ -453,5 +453,113 @@ creating a shopping list
 
 "We have added some simple CSS styles to separate the items visually. [the <b>?]Tap Try it on StackBlitz to see the result and play around with the code."
 
+end of lesson 4 of module 2;
+
+---
+
+begins less on 5 of module 2;
+
+State
+
+"Up to this point, we have learned how to pass to components using props.
+"Many web apps need their components to change their data, for example, aftr user interaction (clicking a button, submitting a form, etc.). However, props cannot be changed.
+"In order to allow components to manage and change their data, React provides a feature called state. State is an object that is added as a property in class components."
+
+# code:
+# class Hello extends React.Component {
+# 	state = {
+#		name: "James"
+#	}
+#
+# 	render() {
+#		return <h1>Hello {this.state.name}.</h1>;
+#	}
+# }
+
+"The state object can contain multiple key:value pairs, separated by commas."
+
+# code:
+# class Person extends React.Component {
+# 	state = {
+#		name: "David",
+#		age: 42
+#	}
+# ...
+# }
+
+"State should not be modified directly. Instead, React provides a setState() method, that can be used to modify state."
+
+# code:
+# this.setState( {
+#	name: "James",
+#	age: 25
+# });
+
+so, "setState" is a method.
+
+"Why should we use setState, instead of simply changing the values of the object properties directly? The answer uncovers one of the most useful features of React: when setState is called, React automatically re-renders the affected component with the new state!
+"Usually, the change in state happens in event handlers. We will look at an example in the next part!"
+
+"When state changes using the setState method, React gets informed and immediately re-renders the component with the updated state."
+
+# code:
+# this.setState({
+# 	count: 42
+# });
+
+A counter app:
+
+# code:
+# class Counter extends React.Component {
+#	state = {
+#		counter: 0
+#	}
+# 	render() {
+#		return <div>
+#		<p>{this.state.counter}</p>
+#		<button>Increment</button>
+#		</div>;
+#	}
+# }
 
 
+counter with a click event handler
+
+# code:
+# class Counter extends React.Component {
+#	state = {
+#		counter: 0
+#	}
+# 	increment = () => {
+#		this.setState({
+#			counter: this.state.counter+1})
+#	}
+#	render() {
+#		return <div>
+#		<p>{this.state.counter}</p>
+#		<button onClick={this.increment}>Increment</button>
+#		</div>;
+#	}
+# }
+
+"Notice that the event handler uses camelCase syntax and that the handler function is passed in curly braces."
+
+Main differences between props and state:
+- "We use props to pass data to components
+- Components use state to manage their data
+- Props are read-only and cannot be modified
+- State can be modified by its component using the setState() method
+- The setState() method results in re-rendering the component affected."
+
+"Components that have states are called stateful, while components that do not use state are called stateless."
+
+# code:
+# class Person extends React.Component {
+# 	state = {
+# 		name: this.props.name
+#	}
+# }
+
+end of lesson 5 of module 2, officially halfway through (I think)
+
+---***---
