@@ -67,3 +67,34 @@ default output of our project in the browswer will be a React logo and note.
 # cd contacts
 # npm start
 
+"Let's explore the structure of our project by opening it using a code editor"
+
+> public [dir]
+> src [dir]
+--package-lock.json
+--package.json
+--README.md
+
+"The public folder contains files related to how the application will display on the client, the most important of those being index.html, which is the HTML template of our page."
+
+> public [dir]
+opened:
+--favicon.ico
+--index.html
+--logo192.png
+--logo512.png
+--manifest.json
+--robots.txt
+
+> src [dir]
+opened:
+--App.css
+--App.js
+--App.test.js
+--index.css
+--index.js
+--logo.svg
+--serviceWorker.js
+--setupTests.js
+
+React uses "Webpack" as a "file loader"
