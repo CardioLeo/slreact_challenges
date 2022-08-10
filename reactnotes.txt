@@ -228,4 +228,48 @@ end of lesson 1 of module 2.
 
 ---
 
+lesson 2 of module 2;
+
+"When the JSX expressions are compiled, they are converted into JavaScript objects, representing React elements.
+
+"React then uses these elements to build the corresponding HTML DOM and display it in the browser.
+
+"Lets create a counter app, that increments a counter variable every second and displays it on the page as a paragraph."
+
+# code:
+# let counter = 0;
+#
+# function show() {
+#	counter++;
+#	cosnt el = <p>{counter}</p>;
+# 	ReactDom.render(
+#		el, document.getElementById('root')
+#	);
+# }
+#
+# setInterval(show, 1000);
+
+"We use setInterval to call the show function every second and render the counter element on the page.
+
+"One of the great features of React is that it updates only the elements that need an update. You can inspect the HTML output of the example above and see that only the text in the paragraph gets updated every second.
+
+"In practice, most React apps call ReactDom.render() once. We will learn how to update elements without calling the render methods in the next lessons."
+
+# code:
+# setInterval(calculate, 5000);
+
+"Virtual DOM" ... "is a lightweight representation of the DOM"
+
+Process:
+
+1: change made
+2: Virtual DOM upgraded, fast process, simple objects
+3: React compared Virtual DOM "to its previous state and only applies the DOM updates necessary to bring the DOM to the desired state."
+
+DOM = Document Object Model, a tree-like representation of the HTML page. (More about DOM in JavaScript Tutorial on SoloLearn.)
+
+finishes lesson 2 in module 2;
+
+---
+
 
