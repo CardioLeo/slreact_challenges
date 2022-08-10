@@ -98,3 +98,46 @@ opened:
 --setupTests.js
 
 React uses "Webpack" as a "file loader"
+
+"Webpack creates a "bundle" file containing the content of multiple files that need to be "bundled" together and it is all added together into a single file instead of making the HTML file go and find multiple files, which can slow down load times tremendously, it only has to find one file."
+
+Two critical files:
+
+-index.js
+-App.js
+
+about index.js: [intry point into application "In our code, a method called ReactDOM.render() is used to find an element with id="root" in the HTML and add our React application inside of that element (similar to the previous lesson)."]
+
+about App.js: ["This file is the main component that will be rendered to the DOM which currently includes the React ogo image and the default text, that we see in the output."]
+
+so:
+
+index.html belongs in the public folder
+
+whereas:
+
+index.css & index.js belong in the src folder
+
+---
+
+Begin Lesson 4:
+
+creating your own "Contact Manager" app using React
+
+"will allow to view the list of contacts and add new ones to the list"
+
+example on StackBlitz
+
+everything will make complete sense by the time you finish the course
+
+# code: 
+# ReactDOM.render(
+# <h1>React Rocks!</h1>,
+# document.getElementById('root')
+# );
+
+end lesson 4, end unit 1;
+
+---
+
+
